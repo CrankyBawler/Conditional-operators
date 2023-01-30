@@ -88,20 +88,36 @@ public class Main {
         int standingPlase = totalSeats - seating;
         int statsOccupiend = 102;
         boolean seatingFree = statsOccupiend < seating;
-        if (seatingFree){
+        if (seatingFree) {
             System.out.println(" В вагоне есть сидячие места");
         }
         boolean standingPlaseFree = statsOccupiend > seating && statsOccupiend < totalSeats;
-        if (standingPlaseFree){
+        if (standingPlaseFree) {
             System.out.println("В вагоне есть стоячие места");
         }
         boolean noAvailableSeats = statsOccupiend == totalSeats;
         if (noAvailableSeats) {
             System.out.println("В вагоне свободных мест нет");
         }
-        }
+    }
+
     public static void task7() {
         System.out.println("");
         System.out.println("Задача 7");
-
+        int one = 15305;
+        int two = 456000;
+        int three = 4567;
+        boolean oneMore = one > two && one > three;
+        if (oneMore) {
+            System.out.println("Число " + one + " наибольшее из чисел");
+        }
+        boolean twoMowe = two > one && two > three;
+        if (twoMowe) {
+            System.out.println("Число " + two + " наибольшее из чисел");
+        }
+        boolean threeMore = three > one && three > two;
+        if (threeMore) {
+            System.out.println("Число " + three + " наибольшее из чисел");
+        }
     }
+}
