@@ -8,13 +8,16 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
         int age = 25;
         System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
         System.out.println("");
     }
+
     public static void task2() {
         System.out.println("Задача 2");
         int temperature = -10;
@@ -24,16 +27,18 @@ public class Main {
             System.out.println("На улице " + temperature + " градусов, можно идти без шапки");
         }
     }
+
     public static void task3() {
         System.out.println("");
         System.out.println("Задача 3");
         int speed = 55;
-        if (speed > 60){
+        if (speed > 60) {
             System.out.println("Если скорость " + speed + " то придется заплатить штраф");
         } else {
             System.out.println("Если скорость " + speed + " можно ездить спокойно");
         }
-        }
+    }
+
     public static void task4() {
         System.out.println("");
         System.out.println("Задача 4");
@@ -55,11 +60,12 @@ public class Main {
             System.out.println("Если возраст человека равен " + age + " то ему нужно ходить на работу");
         }
     }
+
     public static void task5() {
         System.out.println("");
         System.out.println("Задача 5");
         int age = 15;
-        boolean youCantRide  = age < 5;
+        boolean youCantRide = age < 5;
         if (youCantRide) {
             System.out.println("Если возраст ребенка равен " + age + " то ему нельзя кататься на аттракционе");
         }
@@ -69,12 +75,33 @@ public class Main {
                     "Если взрослого нет, то кататься нельзя");
         }
         boolean youCanRide = age > 14;
-        if (youCanRide){
+        if (youCanRide) {
             System.out.println("Если возраст ребенка равен " + age + " то он может кататься без сопровождения взрослого.");
         }
-        }
+    }
+
     public static void task6() {
         System.out.println("");
         System.out.println("Задача 6");
+        int totalSeats = 102;
+        int seating = 60;
+        int standingPlase = totalSeats - seating;
+        int statsOccupiend = 102;
+        boolean seatingFree = statsOccupiend < seating;
+        if (seatingFree){
+            System.out.println(" В вагоне есть сидячие места");
+        }
+        boolean standingPlaseFree = statsOccupiend > seating && statsOccupiend < totalSeats;
+        if (standingPlaseFree){
+            System.out.println("В вагоне есть стоячие места");
+        }
+        boolean noAvailableSeats = statsOccupiend == totalSeats;
+        if (noAvailableSeats) {
+            System.out.println("В вагоне свободных мест нет");
+        }
+        }
+    public static void task7() {
+        System.out.println("");
+        System.out.println("Задача 7");
 
     }
